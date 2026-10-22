@@ -1,0 +1,784 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root {
+   /* colors*/
+    --body-color: #DCEEF5;
+    --nav-color: #12304A;
+    --text-color: #EAF4F8;
+    --search-bar: ;
+    --search-text: ;
+    --apply-button:#14B8A6;
+    --hover-apply-button: #0F9488;
+    --hover-nav-menu: #1E4563;
+    --background-1: #12304A;
+    --background-2 : #193952;
+    --primary-button:white;
+    --primary-button-hover: #071827 ;
+    --text-color-primary-button: #071827;
+    --text-color-primary-button-hover: white;
+    --secondary-button: ;
+    --label-section: #14B8A6;
+    --card:#1D4661;
+    
+    /* FONT HERE BROS */
+    --font-heading-3: #326687;
+}
+/* I consulted the web template from 123website  #31118*/
+
+body {
+    height: fit-content;
+    background-color:  var(--body--color);
+
+}
+hr {
+    border: none;
+    height: 0.6px;
+    background-color: #14B8A6;
+
+}
+
+.nav-bar{
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    height: 80px;
+    width:100%;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: var(--nav-color);
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2000;
+}
+/*------------------------------------*/
+.logo{
+    justify-self: start;
+    margin-left: 85px;
+
+}
+.Logo img {
+    display: block;
+    width: 350px;
+    height: 100px;
+    object-fit: contain;
+    
+}
+/*------------------------------------*/
+.nav-links {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+    
+    
+}
+
+/* bruh I fixed this 1 hour*/
+.nav-links > li > a {
+    position: relative;
+    left: -30px;
+
+    display: inline-block;
+    padding: 4px 18px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #E2E8F0;
+
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        transform 0.5s ease;
+}
+
+
+.nav-links > li > a:hover {
+    background-color: var(--hover-nav-menu);
+    transform: translateY(3px);
+}
+
+
+/*------------------------------------*/
+.apply-button {
+    justify-self: end;
+    background-color: var(--apply-button);
+    padding: 18px 36px;
+    border: none;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 30px;
+    
+  
+   
+}
+.apply-button a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 17px;
+    
+}
+.apply-button:hover {
+    transform: translate(1px, -2px);/*horz,ver*/
+    background-color: var(--hover-apply-button);
+
+}
+/*------------------------------------*/
+
+
+.dropdown-flag {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.dropdown-flag .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -60px;
+    width: 220px;
+    padding: 8px;
+    top: calc(100% + 13px);
+
+    
+    
+    
+
+    list-style: none;
+    background-color: #234761;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+
+    transition: opacity 0.25s ease ,
+                transform 0.25s ease,
+                visibility 0.25s ease;
+
+}
+
+
+.dropdown-flag .dropdown-menu li a {
+    display: block;
+    padding: 12px 14px;
+
+    color: #E2E8F0;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+
+    border-radius: 7px;
+    transition: all 0.5s ease;
+}
+.dropdown-flag .dropdown-menu  a:hover{
+    transform: translateY(-3px);
+}
+
+
+.dropdown-flag .dropdown-menu li a:hover {
+    background-color: rgba(20, 184, 166, 0.15);
+    color: #14B8A6;
+}
+
+
+/* bruh 2hrs just for this */
+.dropdown-flag:hover .dropdown-menu,
+.dropdown-flag:focus-within .dropdown-menu {/*remain the dropdown items when hover them*/
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+#arrow {
+    display: inline-block;
+    transition: transform 0.5s ease;
+    transform: rotate(90deg);
+    font-size: 18px;
+    margin-left: 10px;
+}
+.dropdown-flag:hover #arrow {
+    transform: rotate(-90deg);
+}
+
+/*------------------------------------*/
+#search-box {
+    background-color: white;
+    border-radius: 20px;
+    padding:0px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    width: 45px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+#search-box #search-text {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 30px;
+    width: 0;
+    padding: 0;
+    transition: width 0.3s ease;
+}
+
+#search-button {
+    background-color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    color: #0F9488;
+    font-size: 18px;
+}
+
+/* Khi hover vào search box */
+#search-box:hover {
+    width: 250px;
+}
+
+#search-box:hover #search-text  {
+    width: 205px;
+    padding-left: 12px;
+}
+#search-box:hover #search-button {
+    width: 45px;
+    
+}
+
+#search-box:has(#search-text:not(:placeholder-shown)) {
+    width: 250px;
+}
+
+#search-box:has(#search-text:not(:placeholder-shown)) #search-text {
+    width: 190px;
+    padding-left: 12px;
+}
+
+/*----------------------------------------------------------------------*/
+.hero-section {
+    min-height: 800px;
+    width: 100%;
+    
+
+    background-image:
+        linear-gradient(
+            rgba(21, 88, 147, 0.65),
+            rgba(18, 48, 74, 0.65)
+        ),
+        url("hero-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.hero-content{
+    color:var(--text-color);
+    margin-left: 85px;
+    
+}
+.hero-content h1 {
+    font-size: 80px;
+    padding-top: 150px;
+
+}
+.hero-content p {
+    padding-top: 35px;
+    line-height: 40px;
+    font-size: 20px;
+}
+/*------------------------------------*/
+.primary-button {
+    border-radius: 999px;
+    position: relative;
+    top: 25px;
+    background-color: var(--primary-button);
+    text-decoration: none;
+    color: var(--text-color-primary-button);
+    display: inline-block;
+    padding: 16px 36px;
+    transition: all 0.5s ease;
+    border: 1.5px solid #14B8A6;
+    font-weight: 600;
+
+    
+}
+   
+
+.primary-button:hover {
+    background-color: var(--primary-button-hoverr);
+    color: var(--text-color-primary-button-hover);
+    transform: translate(2px,-3px);
+    
+    
+}
+.secondary-button {
+    border: 1.5px solid #A9C2D3;
+    background-color: transparent;
+    position: relative;
+    top: 25px;
+    left: 20px;
+    padding: 16px 36px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 999px;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.25s ease;
+    display: inline-block;
+
+}
+.secondary-button:hover{
+    transform: translate(2px,-3px)
+}
+/*----------------------------------------------------------------------*/
+.jobs-brief {
+    height: 1600px;;
+    background-color: var(--background-1);
+    z-index: 1;
+}
+.label-and-description-placed-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+.label {
+    color: var(--label-section);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+.label-and-description-placed-center h2{
+    color: var(--text-color);
+    font-size: 80px;
+    margin-bottom: 20px;
+
+}
+.section-description {
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 50px;
+}
+/*------------------------------------*/
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 100px;
+    row-gap: 100px;
+    
+}
+.job-card {
+    width: 400px;
+    background-color: var(--card);
+    padding: 0px;
+    border-radius: 16px;
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+    height: 500px;
+    
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(18, 48, 74, 0.15);
+}
+
+.job-card-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    padding:0;
+    transition: transform 0.4s ease,
+                opacity  0.4s ease;
+    
+    
+}
+.wrap {
+    overflow: hidden;
+}
+
+
+.job-card:hover .job-card-image {
+    transform: rotate(0.75deg) scale(1.05); /*zoom in a bit :)*/
+    opacity: 0.75;
+}
+
+
+.job-card-content h3{
+    font-size: 24px;
+    color: var(--label-section);
+}
+.job-card-content p {
+    margin: 20px 0px;
+    font-size: 17px;
+    color: var(--text-color);
+
+}
+.view-detail:hover {
+    transform: translate(0);
+}
+/*----------------------------------------------------------------------*/
+.label-and-description-placed-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.benefit-container {
+background-color:#193952;  
+       
+      
+    height: 700px;
+    padding: 100px;
+    color: var(--text-color);
+    
+}
+
+
+.benefit-container h2 {
+    color: var(--text-color);
+    font-size: 60px;
+    font-family:  'Times New Roman', Times, serif;
+    font-weight: 200;
+   
+    
+}
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    margin-top: 100px;
+    
+    
+}
+.benefit-card {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    padding: 35px 22px;
+    line-height: 30px;
+}
+.benefit-card h3 {
+    font-size: 20px;
+}
+
+.benefit-card p {
+    margin-top: 30px;
+}
+
+/* ======================================================== */
+/* JOBS.HTML thingy */
+/* ======================================================== */
+
+.hero-short {
+    min-height: 400px;
+}
+
+.jobs-page-section {
+    background-color: var(--background-1);
+    padding: 80px 5%;
+    min-height: 100vh;
+}
+
+.jobs-detail-section {
+    background-color: var(--background-2);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 100px;
+    row-gap: 50px;
+}
+
+.job-card { /* this one is needed so the card won't overlapping each other instead of using the one above :) */
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--card);
+    padding: 0px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; 
+    min-height: 540px;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(18, 48, 74, 0.15);
+}
+
+.job-card-image {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.wrap {
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.job-card:hover .job-card-image {
+    transform: rotate(0.75deg) scale(1.05);
+    opacity: 0.85;
+}
+
+.job-card-content {
+    padding: 0 24px;
+}
+
+.job-badge {
+    display: inline-block;
+    background-color: rgba(20, 184, 166, 0.15);
+    color: var(--label-section);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.job-meta {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #A9C2D3;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.job-meta i {
+    margin-right: 5px;
+    color: var(--label-section);
+}
+
+.job-card-content h3 {
+    font-size: 24px;
+    color: var(--label-section);
+    margin-bottom: 10px;
+}
+
+.job-card-content p {
+    margin: 10px 0px 20px 0px;
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.job-card .primary-button,
+.job-card .view-detail {
+    position: static;
+    top: 0;
+    margin-top: auto;
+}
+
+.card-action-wrap {
+    padding: 0 24px 24px 24px;
+    margin-top: auto;
+}
+
+.view-detail:hover {
+    transform: translate(0);
+}
+
+/* Job Details in the bottom */
+.job-details-container {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+}
+
+.job-detail-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    text-align: left;
+    padding: 35px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    background-color: var(--card);
+}
+
+.job-detail-card h3 {
+    font-size: 28px;
+    color: var(--label-section);
+    margin-bottom: 5px;
+}
+
+.job-detail-card h4 {
+    color: #FFFFFF;
+    font-size: 19px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.job-ref {
+    font-size: 14px;
+    font-weight: bold;
+    color: #CBD5E1;
+    margin-bottom: 15px;
+}
+
+.job-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 18px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #FFFFFF;
+    border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.job-info-grid strong {
+    color: var(--label-section);
+}
+
+.job-spec-list {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.job-spec-list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #E2E8F0;
+}
+
+.job-detail-card p {
+    color: #E2E8F0;
+    line-height: 1.6;
+}
+
+.apply-action-wrap {
+    margin-top: 25px;
+}
+
+.job-aside {
+    background-color: var(--card);
+    border-left: 4px solid var(--label-section);
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 50px;
+    color: var(--text-color);
+}
+
+.job-aside h3 {
+    color: var(--label-section);
+    margin-bottom: 12px;
+}
+
+.job-aside p {
+    color: #E2E8F0;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+    .job-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.job-details-wrapper {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    overflow: hidden; 
+}
+
+/* this is for requirements which I don't know if it's applied or not (<aside> floated right, 25% width, margin, padding, and border) */
+.job-aside {
+    float: right;
+    width: 25%;
+    margin: 0 0 20px 30px;
+    padding: 25px;
+    border: 2px solid var(--label-section);
+    background-color: var(--card);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+.job-aside h3 {
+    color: var(--label-section);
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.job-aside p {
+    color: #E2E8F0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.job-details-container {
+    /* Detailed cards (changing widths) and such while angry */
+    width: 70%;
+    float: left;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .job-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .job-details-container {
+        float: none;
+        width: 100%;
+    }
+}

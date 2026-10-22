@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tran Truong Hieu">
+        <meta name="keywords" content="careers, job openings, healthcare tech, medical software, hiring, software engineer, UI UX designer, healthcare careers">
+        <title>Career Opportunities & Open Positions | Healthcare Technology</title>
+        <meta name="description" content="Explore open career opportunities and job openings in healthcare technology, web development, content creation, and IT support.">
+        
+        <!-- Shared External CSS File -->
+        <link href="home.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        
+        <!-- Requirement: At least one embedded CSS example on every web page -->
+        <style>
+            .page-intro-badge {
+                display: inline-block;
+                padding: 6px 16px;
+                background-color: rgba(20, 184, 166, 0.2);
+                border-radius: 20px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <span class="logo">
+                    <a href="index.html"> 
+                        <img src="logo.png" alt="company logo">
+                    </a>
+                </span>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html" class="active">Career</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li class="dropdown-flag">
+                        <a href="#">Pages
+                            <span id="arrow">&#10092;</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">line 1</a></li>
+                            <li><a href="#">line 2</a></li>
+                            <li><a href="#">line 3</a></li>
+                            <li><a href="#">line 4</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <form action="" id="search-box">
+                            <input type="text" id="search-text" placeholder="Search" required>
+                            <button id="search-button" type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
+                </ul>
+                
+                <button class="apply-button">   
+                    <a href="apply.html">Apply now</a>
+                </button>      
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Banner Section -->
+            <section class="hero-section hero-short">
+                <div class="hero-content">
+                    <h1>Explore Careers</h1>
+                    <p>
+                        Discover meaningful career opportunities where innovation, technology,<br>
+                        and healthcare come together to improve lives.
+                    </p>
+                </div>
+            </section>
+            
+            <hr>
+
+            <!-- Featured Job Overview Section -->
+            <section class="jobs-page-section">
+                <div class="label-and-description-placed-center">
+                    <!-- Requirement: At least one inline CSS example on every web page -->
+                    <span class="page-intro-badge" style="color: #14B8A6; font-weight: bold;">OPEN POSITIONS</span>
+                    
+                    <h2>Join Our Innovation Team</h2>
+                    <p class="section-description">
+                        Find the role where you can make a direct impact on healthcare digital transformation.
+                    </p>
+
+                    <!-- Job Cards Grid (Overview) -->
+                    <div class="cards-container">
+                        
+                        <!-- 1. Frontend Developer -->
+                        <article class="job-card">
+                            <div>
+                                <div class="wrap">
+                                    <img src="images/Frontend.jpg" alt="Frontend Developer workspace" class="job-card-image">
+                                </div>
+                                <div class="job-card-content">
+                                    <span class="job-badge">Engineering</span>
+                                    <h3>Frontend Developer</h3>
+                                    <div class="job-meta">
+                                        <span><i class="fa-solid fa-location-dot"></i> Hybrid</span>
+                                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                                    </div>
+                                    <p>Build accessible, high-performance, and user-friendly healthcare web platforms and patient portals.</p>
+                                </div>
+                            </div>
+                            <div class="card-action-wrap">
+                                <a href="#job-FE102" class="primary-button view-detail">View Details &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 2. UI/UX Designer -->
+                        <article class="job-card">
+                            <div>
+                                <div class="wrap">
+                                    <img src="images/UIUX Designer.jpg" alt="UI/UX Designer working on interface" class="job-card-image">
+                                </div>
+                                <div class="job-card-content">
+                                    <span class="job-badge">Design</span>
+                                    <h3>UI/UX Designer</h3>
+                                    <div class="job-meta">
+                                        <span><i class="fa-solid fa-location-dot"></i> Remote / On-site</span>
+                                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                                    </div>
+                                    <p>Design intuitive digital experiences, clinical workflows, and seamless interfaces for patients and healthcare staff.</p>
+                                </div>
+                            </div>
+                            <div class="card-action-wrap">
+                                <a href="#job-UX204" class="primary-button view-detail">View Details &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 3. Backend Developer -->
+                        <article class="job-card">
+                            <div>
+                                <div class="wrap">
+                                    <img src="images/Backend Developer.jpg" alt="Backend Developer coding" class="job-card-image">
+                                </div>
+                                <div class="job-card-content">
+                                    <span class="job-badge">Engineering</span>
+                                    <h3>Backend Developer</h3>
+                                    <div class="job-meta">
+                                        <span><i class="fa-solid fa-location-dot"></i> On-site</span>
+                                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                                    </div>
+                                    <p>Develop reliable systems for appointments, secure database architecture, and patient platforms.</p>
+                                </div>
+                            </div>
+                            <div class="card-action-wrap">
+                                <a href="#job-BE306" class="primary-button view-detail">View Details &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 4. IT Support Specialist -->
+                        <article class="job-card">
+                            <div>
+                                <div class="wrap">
+                                    <img src="images/IT Support Specialist.jpg" alt="IT Support Specialist helping team" class="job-card-image">
+                                </div>
+                                <div class="job-card-content">
+                                    <span class="job-badge">Support</span>
+                                    <h3>IT Support Specialist</h3>
+                                    <div class="job-meta">
+                                        <span><i class="fa-solid fa-location-dot"></i> On-site</span>
+                                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                                    </div>
+                                    <p>Provide technical support and maintain reliable IT systems for hospital and healthcare staff.</p>
+                                </div>
+                            </div>
+                            <div class="card-action-wrap">
+                                <a href="#job-IT408" class="primary-button view-detail">View Details &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 5. Digital Health Content Specialist -->
+                        <article class="job-card">
+                            <div>
+                                <div class="wrap">
+                                    <img src="images/Digital Health Content Specialist.jpg" alt="Digital Health Content Specialist writing" class="job-card-image">
+                                </div>
+                                <div class="job-card-content">
+                                    <span class="job-badge">Content</span>
+                                    <h3>Digital Health Content Specialist</h3>
+                                    <div class="job-meta">
+                                        <span><i class="fa-solid fa-location-dot"></i> Hybrid</span>
+                                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                                    </div>
+                                    <p>Create clear, accurate, and accessible health information and medical articles for digital platforms.</p>
+                                </div>
+                            </div>
+                            <div class="card-action-wrap">
+                                <a href="#job-HC510" class="primary-button view-detail">View Details &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 6. QA Tester -->
+                        <article class="job-card">
+                            <div>
+                                <div class="wrap">
+                                    <img src="images/QA Tester.jpg" alt="QA Tester reviewing code and errors" class="job-card-image">
+                                </div>
+                                <div class="job-card-content">
+                                    <span class="job-badge">Engineering</span>
+                                    <h3>QA Tester</h3>
+                                    <div class="job-meta">
+                                        <span><i class="fa-solid fa-location-dot"></i> Hybrid</span>
+                                        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+                                    </div>
+                                    <p>Test digital healthcare applications to identify bugs, verify features, and ensure software quality.</p>
+                                </div>
+                            </div>
+                            <div class="card-action-wrap">
+                                <a href="#job-QA612" class="primary-button view-detail">View Details &rarr;</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- Detailed Job Descriptions Section with Floated Aside -->
+            <section class="jobs-page-section jobs-detail-section">
+                <div class="label-and-description-placed-center">
+                    <p class="label">POSITION SPECIFICATIONS</p>
+                    <h2>Detailed Job Roles</h2>
+                </div>
+
+                <div class="job-details-wrapper">
+                    <!-- Requirement: <aside> floated right, 25% width, styled with margin, padding, and border -->
+                    <aside class="job-aside">
+                        <h3><i class="fa-solid fa-circle-info"></i> Application Tip & Benefits</h3>
+                        <p>When applying, please make sure to reference the exact 5-character Reference Number in your application form. All full-time employees enjoy flexible hybrid work arrangements, annual learning stipends, and comprehensive health cover.</p>
+                    </aside>
+
+                    <div class="job-details-container">
+                        
+                        <!-- 1. Frontend Developer Details -->
+                        <article id="job-FE102" class="job-card job-detail-card">
+                            <h3>Frontend Developer</h3>
+                            <p class="job-ref">Ref Number: FE102</p>
+                            <p>We are seeking a dedicated Frontend Developer to design and deliver high-performance web applications, patient management portals, and responsive digital health interfaces.</p>
+                            
+                            <div class="job-info-grid">
+                                <p><strong>Salary Range:</strong> $85,000 - $105,000 AUD per annum</p>
+                                <p><strong>Reporting Line:</strong> Reports directly to the Lead Frontend Engineer</p>
+                            </div>
+
+                            <h4>Key Responsibilities</h4>
+                            <ol class="job-spec-list">
+                                <li>Develop responsive, cross-browser web components using HTML5, CSS3, and JavaScript.</li>
+                                <li>Collaborate closely with UI/UX designers to translate wireframes into clean, functional interfaces.</li>
+                                <li>Optimize applications for maximum speed, performance, and WCAG accessibility standards.</li>
+                                <li>Integrate secure RESTful APIs to communicate with backend appointment and health data systems.</li>
+                            </ol>
+
+                            <h4>Requirements</h4>
+                            <p><strong>Essential Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Bachelor's degree in Computer Science, Software Engineering, or equivalent practical experience.</li>
+                                <li>Minimum 3 years of hands-on experience in modern frontend web development.</li>
+                                <li>Strong competency in HTML5, CSS3, semantic web design, and responsive layouts.</li>
+                            </ul>
+
+                            <p><strong>Preferable Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Experience building web applications within the healthcare or medical industry.</li>
+                                <li>Familiarity with web accessibility compliance (WCAG 2.1 AA guidelines).</li>
+                            </ul>
+
+                            <div class="apply-action-wrap">
+                                <a href="apply.html?ref=FE102" class="primary-button">Apply For This Role &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 2. UI/UX Designer Details -->
+                        <article id="job-UX204" class="job-card job-detail-card">
+                            <h3>UI/UX Designer</h3>
+                            <p class="job-ref">Ref Number: UX204</p>
+                            <p>Join our design team to research, prototype, and build empathetic digital healthcare experiences for both patients and healthcare providers.</p>
+                            
+                            <div class="job-info-grid">
+                                <p><strong>Salary Range:</strong> $80,000 - $98,000 AUD per annum</p>
+                                <p><strong>Reporting Line:</strong> Reports directly to the Head of Product Design</p>
+                            </div>
+
+                            <h4>Key Responsibilities</h4>
+                            <ol class="job-spec-list">
+                                <li>Conduct user research, interviews, and usability tests with medical staff and patients.</li>
+                                <li>Produce wireframes, user flows, site maps, and high-fidelity interactive prototypes.</li>
+                                <li>Maintain and expand our design system components across multi-platform web applications.</li>
+                                <li>Advocate for user-centered design principles across all software product initiatives.</li>
+                            </ol>
+
+                            <h4>Requirements</h4>
+                            <p><strong>Essential Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Degree in Design, Human-Computer Interaction (HCI), or equivalent experience.</li>
+                                <li>Proven portfolio demonstrating end-to-end UX research and UI visual design.</li>
+                                <li>Proficiency in standard UI design tools such as Figma, Adobe XD, or Sketch.</li>
+                            </ul>
+
+                            <p><strong>Preferable Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Understanding of frontend web development constraints (HTML/CSS).</li>
+                                <li>Prior experience designing patient portals or clinical dashboard tools.</li>
+                            </ul>
+
+                            <div class="apply-action-wrap">
+                                <a href="apply.html?ref=UX204" class="primary-button">Apply For This Role &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 3. Backend Developer Details -->
+                        <article id="job-BE306" class="job-card job-detail-card">
+                            <h3>Backend Developer</h3>
+                            <p class="job-ref">Ref Number: BE306</p>
+                            <p>Develop robust server architecture, secure database infrastructures, and reliable APIs supporting appointments and patient record platforms.</p>
+                            
+                            <div class="job-info-grid">
+                                <p><strong>Salary Range:</strong> $90,000 - $120,000 AUD per annum</p>
+                                <p><strong>Reporting Line:</strong> Reports directly to the Engineering Director</p>
+                            </div>
+
+                            <h4>Key Responsibilities</h4>
+                            <ol class="job-spec-list">
+                                <li>Design, build, and maintain scalable server-side applications and microservices.</li>
+                                <li>Ensure data security, regulatory compliance, and encryption standards for patient health records.</li>
+                                <li>Build and optimize RESTful or GraphQL APIs for frontend application integration.</li>
+                                <li>Monitor system uptime, handle database tuning, and troubleshoot server performance bottlenecks.</li>
+                            </ol>
+
+                            <h4>Requirements</h4>
+                            <p><strong>Essential Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Degree in Software Engineering, Computer Science, or related technical field.</li>
+                                <li>Minimum 3+ years backend engineering experience with Node.js, Python, or Java.</li>
+                                <li>Extensive experience working with relational databases (PostgreSQL, MySQL) and NoSQL stores.</li>
+                            </ul>
+
+                            <p><strong>Preferable Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Experience with HIPAA, GDPR, or Australian healthcare data security compliance.</li>
+                                <li>Familiarity with cloud deployment platforms like AWS, Azure, or Google Cloud.</li>
+                            </ul>
+
+                            <div class="apply-action-wrap">
+                                <a href="apply.html?ref=BE306" class="primary-button">Apply For This Role &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 4. IT Support Specialist Details -->
+                        <article id="job-IT408" class="job-card job-detail-card">
+                            <h3>IT Support Specialist</h3>
+                            <p class="job-ref">Ref Number: IT408</p>
+                            <p>Provide responsive technical assistance, resolve hardware and software issues, and maintain reliable IT infrastructure for our internal healthcare staff.</p>
+                            
+                            <div class="job-info-grid">
+                                <p><strong>Salary Range:</strong> $65,000 - $80,000 AUD per annum</p>
+                                <p><strong>Reporting Line:</strong> Reports directly to the IT Operations Manager</p>
+                            </div>
+
+                            <h4>Key Responsibilities</h4>
+                            <ol class="job-spec-list">
+                                <li>Provide Tier 1 and Tier 2 IT helpdesk support for office and remote healthcare staff.</li>
+                                <li>Install, configure, and maintain hardware workstations, laptops, peripherals, and networking equipment.</li>
+                                <li>Maintain user accounts, access permissions, and cybersecurity protocols across corporate software suites.</li>
+                                <li>Document technical troubleshooting guides, inventory logs, and IT asset management procedures.</li>
+                            </ol>
+
+                            <h4>Requirements</h4>
+                            <p><strong>Essential Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Diploma or Degree in Information Technology, Computer Science, or equivalent experience.</li>
+                                <li>Strong working knowledge of Windows and macOS operating systems support.</li>
+                                <li>Excellent communication skills and customer-service mindset.</li>
+                            </ul>
+
+                            <p><strong>Preferable Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>CompTIA Network+, Security+, or Microsoft certified professional qualifications.</li>
+                                <li>Experience working in a hospital or medical office IT support setting.</li>
+                            </ul>
+
+                            <div class="apply-action-wrap">
+                                <a href="apply.html?ref=IT408" class="primary-button">Apply For This Role &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 5. Digital Health Content Specialist Details -->
+                        <article id="job-HC510" class="job-card job-detail-card">
+                            <h3>Digital Health Content Specialist</h3>
+                            <p class="job-ref">Ref Number: HC510</p>
+                            <p>Create clear, medically accurate, and accessible health information and digital content to educate patients and improve health literacy.</p>
+                            
+                            <div class="job-info-grid">
+                                <p><strong>Salary Range:</strong> $70,000 - $88,000 AUD per annum</p>
+                                <p><strong>Reporting Line:</strong> Reports directly to the Head of Content & Communications</p>
+                            </div>
+
+                            <h4>Key Responsibilities</h4>
+                            <ol class="job-spec-list">
+                                <li>Research, write, and edit clear medical articles, patient FAQs, and wellness guides for digital portals.</li>
+                                <li>Collaborate with medical advisors and clinicians to fact-check health claims and editorial materials.</li>
+                                <li>Optimize web content for search engines (SEO) and readability across mobile and desktop devices.</li>
+                                <li>Manage content publishing schedules and review cycles in line with digital communication strategies.</li>
+                            </ol>
+
+                            <h4>Requirements</h4>
+                            <p><strong>Essential Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Degree in Communications, Journalism, Health Science, Nursing, or related discipline.</li>
+                                <li>Minimum 2 years of professional writing or digital content creation experience.</li>
+                                <li>Exceptional editing skills with a sharp eye for detail and grammar.</li>
+                            </ul>
+
+                            <p><strong>Preferable Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Background or education in medical science, nursing, or public health.</li>
+                                <li>Experience using content management systems (CMS) and basic SEO tools.</li>
+                            </ul>
+
+                            <div class="apply-action-wrap">
+                                <a href="apply.html?ref=HC510" class="primary-button">Apply For This Role &rarr;</a>
+                            </div>
+                        </article>
+
+                        <!-- 6. QA Tester Details -->
+                        <article id="job-QA612" class="job-card job-detail-card">
+                            <h3>QA Tester</h3>
+                            <p class="job-ref">Ref Number: QA612</p>
+                            <p>Perform rigorous functional, integration, and security testing across our digital healthcare applications to ensure uncompromised quality and reliability.</p>
+                            
+                            <div class="job-info-grid">
+                                <p><strong>Salary Range:</strong> $75,000 - $92,000 AUD per annum</p>
+                                <p><strong>Reporting Line:</strong> Reports directly to the QA Lead / Test Manager</p>
+                            </div>
+
+                            <h4>Key Responsibilities</h4>
+                            <ol class="job-spec-list">
+                                <li>Review product requirements and technical specs to formulate comprehensive test plans and cases.</li>
+                                <li>Execute manual and automated test scripts across web and mobile health applications.</li>
+                                <li>Identify, log, and track software bugs and usability defects using issue tracking platforms (e.g., Jira).</li>
+                                <li>Perform regression testing following new code deployments and feature releases.</li>
+                            </ol>
+
+                            <h4>Requirements</h4>
+                            <p><strong>Essential Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Degree in Software Engineering, IT, or equivalent professional QA testing experience.</li>
+                                <li>Familiarity with software QA methodologies, test case design, and bug lifecycle tracking.</li>
+                                <li>Strong analytical mindset with keen attention to detail.</li>
+                            </ul>
+
+                            <p><strong>Preferable Requirements:</strong></p>
+                            <ul class="job-spec-list">
+                                <li>Experience with automated testing frameworks (Selenium, Cypress, or Jest).</li>
+                                <li>ISTQB Foundation Level certification in Software Testing.</li>
+                            </ul>
+
+                            <div class="apply-action-wrap">
+                                <a href="apply.html?ref=QA612" class="primary-button">Apply For This Role &rarr;</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Contact information and required links -->
+        </footer>
+    </body>
+</html>
