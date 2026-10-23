@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nguyen Hoang An">
+    <meta name="description" content="Apply for a career opportunity with our digital healthcare technology team.">
+    <title>Apply for a Role | Healthcare Technology Careers</title>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="apply.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="apply-page">
+    <header>
+        <nav class="nav-bar" aria-label="Main navigation">
+            <span class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Healthcare Technology home">
+                </a>
+            </span>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Career</a></li>
+                <li><a href="about.html">About</a></li>
+
+                <li class="dropdown-flag">
+                    <a href="#pages-menu" aria-haspopup="true">
+                        Pages <span id="arrow" aria-hidden="true">&#10092;</span>
+                    </a>
+                    <ul class="dropdown-menu" id="pages-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Career</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="apply.html" aria-current="page">Apply</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html#contact">Contact</a></li>
+            </ul>
+
+            <a class="apply-button" href="apply.html" aria-current="page">
+                Apply now
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section apply-hero" aria-labelledby="apply-heading">
+            <div class="hero-content">
+                <p class="apply-eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+                <h1 id="apply-heading">Apply to Join<br>Our Team</h1>
+                <p>
+                    Tell us about yourself and the role you would like to make an impact in.
+                    Help us build more accessible digital healthcare experiences.
+                </p>
+            </div>
+        </section>
+
+        <section class="apply-section" aria-labelledby="form-title">
+            <div class="apply-intro">
+                <p class="label">JOB APPLICATION</p>
+                <h2 id="form-title">Application Form</h2>
+                <p class="apply-description">
+                    Complete the required fields below.
+                    Fields marked with <span aria-hidden="true">*</span> are mandatory.
+                </p>
+            </div>
+
+            <form class="application-form" action="#" method="post">
+
+                <fieldset class="form-group">
+                    <legend>
+                        <span class="step-number">01</span>
+                        Personal Information
+                    </legend>
+
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="first-name">First name <span aria-hidden="true">*</span></label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first_name"
+                                autocomplete="given-name"
+                                maxlength="60"
+                                placeholder="Enter your first name"
+                                required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last_name"
+                                autocomplete="family-name"
+                                maxlength="60"
+                                placeholder="Enter your last name"
+                                required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email address <span aria-hidden="true">*</span></label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                maxlength="120"
+                                placeholder="you@example.com"
+                                required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                autocomplete="tel"
+                                minlength="7"
+                                maxlength="25"
+                                pattern="[0-9+() .-]{7,25}"
+                                placeholder="e.g. +61 400 123 456"
+                                aria-describedby="phone-help"
+                                required>
+                            <small id="phone-help">
+                                Use digits and common phone symbols only.
+                            </small>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="location">Current city / country</label>
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                autocomplete="address-level2"
+                                maxlength="100"
+                                placeholder="e.g. Melbourne, Australia">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>
+                        <span class="step-number">02</span>
+                        Position Details
+                    </legend>
+
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="position">Position applying for <span aria-hidden="true">*</span></label>
+                            <select id="position" name="position" required>
+                                <option value="" selected disabled>Select a position</option>
+                                <option value="FE102">Frontend Developer — FE102</option>
+                                <option value="UX204">UI/UX Designer — UX204</option>
+                                <option value="BE306">Backend Developer — BE306</option>
+                                <option value="IT408">IT Support Specialist — IT408</option>
+                                <option value="HC510">Digital Health Content Specialist — HC510</option>
+                                <option value="QA612">QA Tester — QA612</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="reference">Job reference code <span aria-hidden="true">*</span></label>
+                            <input
+                                type="text"
+                                id="reference"
+                                name="reference_code"
+                                minlength="5"
+                                maxlength="5"
+                                pattern="(FE102|UX204|BE306|IT408|HC510|QA612)"
+                                placeholder="e.g. FE102"
+                                aria-describedby="reference-help"
+                                required>
+                            <small id="reference-help">
+                                Enter the 5-character code shown on the job description.
+                            </small>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="work-type">Preferred work arrangement</label>
+                            <select id="work-type" name="work_arrangement">
+                                <option value="">Select an option</option>
+                                <option value="onsite">On-site</option>
+                                <option value="hybrid">Hybrid</option>
+                                <option value="remote">Remote</option>
+                                <option value="flexible">Open to discussion</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="availability">When could you start? <span aria-hidden="true">*</span></label>
+                            <select id="availability" name="availability" required>
+                                <option value="" selected disabled>Select availability</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="2-weeks">Within 2 weeks</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="negotiable">Negotiable</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>
+                        <span class="step-number">03</span>
+                        Experience and Skills
+                    </legend>
+
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="experience">Relevant work experience <span aria-hidden="true">*</span></label>
+                            <select id="experience" name="experience" required>
+                                <option value="" selected disabled>Select your experience</option>
+                                <option value="student">Student / entry-level</option>
+                                <option value="under-2">Less than 2 years</option>
+                                <option value="2-4">2–4 years</option>
+                                <option value="5-plus">5 or more years</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="education">Highest relevant qualification</label>
+                            <select id="education" name="education">
+                                <option value="">Select a qualification</option>
+                                <option value="secondary">Secondary school</option>
+                                <option value="certificate">Certificate / Diploma</option>
+                                <option value="bachelor">Bachelor's degree</option>
+                                <option value="postgraduate">Postgraduate qualification</option>
+                                <option value="other">Other / currently studying</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <p class="field-label" id="skills-label">
+                                Relevant skills (select all that apply)
+                            </p>
+
+                            <div class="checkbox-grid" role="group" aria-labelledby="skills-label">
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="html-css">
+                                    HTML / CSS
+                                </label>
+
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="javascript">
+                                    JavaScript / programming
+                                </label>
+
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="ui-ux">
+                                    UI/UX design
+                                </label>
+
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="testing">
+                                    Software testing / QA
+                                </label>
+
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="it-support">
+                                    IT support / networking
+                                </label>
+
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="writing">
+                                    Writing / content creation
+                                </label>
+
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="accessibility">
+                                    Accessibility / inclusive design
+                                </label>
+
+                                <label class="choice-label">
+                                    <input type="checkbox" name="skills" value="healthcare">
+                                    Healthcare technology
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="motivation">
+                                Why are you interested in this role?
+                                <span aria-hidden="true">*</span>
+                            </label>
+                            <textarea
+                                id="motivation"
+                                name="motivation"
+                                rows="5"
+                                minlength="30"
+                                maxlength="1500"
+                                placeholder="Briefly describe your relevant experience, strengths, and motivation (30–1500 characters)."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="portfolio">Portfolio or LinkedIn URL (optional)</label>
+                            <input
+                                type="url"
+                                id="portfolio"
+                                name="portfolio_url"
+                                maxlength="300"
+                                placeholder="https://">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group consent-group">
+                    <legend>
+                        <span class="step-number">04</span>
+                        Declaration
+                    </legend>
+
+                    <label class="choice-label consent-label">
+                        <input
+                            type="checkbox"
+                            name="information_accuracy"
+                            value="confirmed"
+                            required>
+                        I confirm that the information I have provided is accurate to the best of my knowledge.
+                        <span aria-hidden="true">*</span>
+                    </label>
+
+                    <p class="privacy-note">
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        Please do not include medical records, government identification numbers,
+                        or other sensitive personal information in this form.
+                    </p>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="reset" class="reset-button">
+                        <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                        Reset Form
+                    </button>
+
+                    <button type="submit" class="submit-button">
+                        Submit Application <span aria-hidden="true">&rarr;</span>
+                    </button>
+                </div>
+
+                <p class="form-notice">
+                    Demonstration form: this static website does not transmit or store applications.
+                    A backend service would be required to receive submissions securely.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="apply-footer">
+        <p>&copy; 2026 Healthcare Technology Careers. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">|</span>
+            <a href="jobs.html">Open Positions</a>
+            <span aria-hidden="true">|</span>
+            <a href="about.html">About Us</a>
+        </p>
+    </footer>
+</body>
+</html>
