@@ -531,7 +531,7 @@ background-color:#193952;
     padding: 0px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* transition 0.3s slow -> fast -> slow */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* -> top -> bottom, also making sure that space distributed evenly */
@@ -734,7 +734,7 @@ background-color:#193952;
 
 /* --- Responsive Media Queries --- */
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { /* minimised or if you play CS in 4:3 ratio */
     .cards-container {
         grid-template-columns: repeat(2, 1fr); /* demo if needed, basically repeating 1fr twice, make sure it doesn't squish */
     }
