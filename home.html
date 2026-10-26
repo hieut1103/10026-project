@@ -5,48 +5,46 @@
         
         <meta name ="author" content="Truong Viet Dung">
         <meta name ="keyword" content="apply,job,hospital,doctor,nurse,available,vacancies,health,technologies,technology,software engineeer,frontend developer, health content specialist">
-        <meta name ="viewport" content="width= device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>name company| Healthcare Technology Careers</title>
         <meta name ="description"content ="Explore career opportunities at ......, a digital healthcare technology company developing patient platforms, appointment systems, and health information websites.">
         <link href="home.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </head>
     <body>
-        <header><!-- watched video from Codinglab-->
+        <header>
             <nav class="nav-bar">
                     <span class="logo">
-                        <a href="index.html"> 
+                        <a href="home.html"> 
                             <img src ="logo.png" alt="company logo">
                         </a>
                     </span>
+                    
+                    
+                     <!-- Mobile hamburger menu -->
+                    <input type="checkbox" id="menu-checkbox">
+                    <label for="menu-checkbox" class="menu-toggle">☰</label>
+
                     <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home.html">Home</a></li>
                         <li><a href="jobs.html">Career</a></li>
                         <li><a href="about.html">About</a></li>
-                        
-                        <li class="dropdown-flag">
-                            <a href="#">Pages
-                                <span id = "arrow">&#10092;</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#" >line 1</a></li>
-                                <li><a href="#" >line 2</a></li>
-                                <li><a href="#" >line 3</a></li>
-                                <li><a href="#" >line 4</a></li>
-                            </ul>
-                        </li>
-
                         <li><a href ="#">Contact</a></li>
-                        <li></li>
-                            <form action="" id="search-box">
-                                <input type="text" id ="search-text" placeholder="Search" required>
-                                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </form>
-
-
-                        </li>
+                        
                     </ul>
-                    
+                     <!-- Search stays visible outside the hamburger menu -->
+                    <form action="" id="search-box" role="search">
+                        <input
+                            type="search"
+                            id="search-text"
+                            placeholder="Search"
+                            aria-label="Search"
+                            required
+                        >
+                        <button id="search-button" type="submit" aria-label="Search">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                        </button>
+                    </form>
                     <button class="apply-button">   
                         <a href="apply.html" >Apply now</a>
                     </button>      
@@ -86,15 +84,15 @@
                     </p>
                     
                     <div>
-                        <a href="jobs.html" class="primary-button">
-                            View All Jobs  &rarr;
+                        <a href="jobs.html" class="primary-button view-all-jobs">
+                            View all jobs  &rarr;
                         </a>
                     </div>
 
 
                     <div class="cards-container">
                         <article class="job-card">
-                            <div class="wrap">"<img src="images/Frontend.jpg" alt="" class="job-card-image"></div>
+                            <div class="wrap"><img src="images/Frontend.jpg" alt="" class="job-card-image"></div>
                             <div class="job-card-content">
                                 <h3>Frontend Developer</h3>
                                 <p>Build accessible and user-friendly healthcare websites.</p>
@@ -207,9 +205,7 @@
                                patient platforms, appointment systems, and healthcare websites.
                             </p>
                         </article>
-                        
                     </div>
-                    
                 </div>
                  
             </section>
@@ -217,11 +213,105 @@
 
             <section class="about-section">
                 <!-- About the company -->
+                <div class="about-content">
+                    <span class="about-label">ABOUT US</span>
+
+                    <h2>Transforming Healthcare Through Technology</h2>
+
+                    <p class="about-description">
+                        MediFlow is a digital health technology company
+                        dedicated to improving healthcare experiences through
+                        innovative digital solutions.
+                    </p>
+
+                    <p class="about-description">
+                        We build reliable online patient platforms, appointment
+                        systems, and health information services that help connect
+                        people with better healthcare.
+                    </p>
+
+                    <a href="About.html" class="about-button">
+                        Learn More About Us
+                    </a>
+                </div>
+
+                <div class="about-visual">
+                    <div class="about-card">
+                        <span class="about-icon" aria-hidden="true">✚</span>
+                        <h3>Technology Meets Healthcare</h3>
+                        <p>
+                            Creating simpler, more accessible digital healthcare
+                            experiences for everyone.
+                        </p>
+                    </div>
+                </div>
+
+
             </section>
         </main>
 
         <footer>
             <!-- Contact information and required links -->
+             
+
+            <div class="footer-container">
+
+                <!-- Company information -->
+                <div class="footer-about">
+                     <span class="logo">
+                        <a href="home.html"> 
+                            <img src ="logo.png" alt="company logo">
+                        </a>
+                    </span>
+                    <p>Healthcare Technology Careers</p>
+                    
+                </div>
+
+                <!-- Quick navigation -->
+                <div class="footer-links">
+                    <h3 style="color: black;"> Quick links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact information -->
+                <div class="footer-contact">
+                    <h3 style="color: black;">Contact Us</h3>
+                    <p>Email:
+                        <a href="mailto:contact@mediflow.example">
+                            contact@mediflow.example
+                        </a>
+                    </p>
+                    <p>Digital Health &amp; Wellness</p>
+                </div>
+
+                <!-- Project links -->
+                <div class="footer-project">
+                    <h3 style="color: black;">Our Project</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/hieut1103/10026-project.git" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://brandonaceofspades.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiZjhiMDE4YjY3NzdmNDhkOGFhZDk2YzhlNWFlYTMxMTQiLCJwIjoiaiJ9" target="_blank"
+                            rel="noopener noreferrer">Jira</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MediFlow. All rights reserved.</p>
+                <p>G01 Digital Health &amp; Wellness Provider</p>
+            </div>
+
+
         </footer>
     </body>
 
