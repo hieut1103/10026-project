@@ -359,7 +359,7 @@ hr {
     color: var(--label-section);
 }
 .job-card-content p {
-    margin: 20px 0px;
+    margin: 15px 0px;
     font-size: 17px;
     color: var(--text-color);
 
@@ -890,7 +890,7 @@ footer {
     }
 /*-----------------------------------------*/
 .jobs-brief {
-    height: 3600px;
+    height: 3550px;
     background-color: var(--background-1);
     z-index: 1;
 }
@@ -986,7 +986,7 @@ footer {
 
 
 .job-card-content h3{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--label-section);
 }
 .job-card-content p {
@@ -1031,11 +1031,14 @@ background-color:#193952;
 
 .benefit-container h2 {
     color: var(--text-color);
-    font-size: 35px;
+    font-size: 30px;
     font-family:  'Times New Roman', Times, serif;
     font-weight: 200;
     width: 100%;
-    
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    right: 40px;
 }
 .benefits-grid {
     
