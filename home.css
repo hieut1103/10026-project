@@ -344,6 +344,7 @@ hr {
 }
 .wrap {
     overflow: hidden;
+    Border-radius: 8px 8px 0 0;
 }
 
 
@@ -948,6 +949,7 @@ footer {
     transition: transform 0.3s ease,
                 box-shadow 0.3s ease;
     height: 500px;
+    overflow: hidden;
     
 }
 
@@ -971,12 +973,15 @@ footer {
 }
 .wrap {
     overflow: hidden;
+    
 }
+
 
 
 .job-card:hover .job-card-image {
     transform: rotate(0.75deg) scale(1.05); /*zoom in a bit :)*/
     opacity: 0.75;
+    
 }
 
 
