@@ -325,7 +325,7 @@
 
     .apply-page .Logo img,
     .apply-page .logo img {
-        max-width: 190px;
+        max-width: 100%;
         height: auto;
     }
 
