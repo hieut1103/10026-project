@@ -8,12 +8,11 @@
         <title>Career Opportunities & Open Positions | Healthcare Technology</title>
         <meta name="description" content="Explore open career opportunities and job openings in healthcare technology, web development, content creation, and IT support.">
         
-        <!-- CSS External, idk if it's a requirement or not -->
         <link href="style/home.css" rel="stylesheet">
         <link href="style/jobs.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         
-        <style>
+        <style> <!--purely for the requirement-->
             .page-intro-badge {
                 display: inline-block;
                 padding: 6px 16px;
@@ -32,7 +31,6 @@
                     </a>
                 </span>
                 
-                <!-- Mobile hamburger menu toggle matching home.html -->
                 <input type="checkbox" id="menu-checkbox">
                 <label for="menu-checkbox" class="menu-toggle">☰</label>
 
@@ -43,17 +41,15 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
 
-                <!-- Search stays visible outside the hamburger menu -->
-                <form action="" id="search-box" role="search">
+                <form action="" id="search-box">
                     <input
                         type="search"
                         id="search-text"
                         placeholder="Search"
-                        aria-label="Search"
                         required
                     >
-                    <button id="search-button" type="submit" aria-label="Search">
-                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <button id="search-button" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
 
@@ -64,7 +60,6 @@
         </header>
 
         <main>
-            <!-- Hero banner -->
             <section class="hero-section hero-short">
                 <div class="hero-content">
                     <h1>Explore Careers</h1>
@@ -77,7 +72,6 @@
             
             <hr>
 
-            <!-- Featured Job Overview Section -->
             <section class="jobs-page-section">
                 <div class="label-and-description-placed-center">
                     <span class="page-intro-badge" style="color: #14B8A6; font-weight: bold;">OPEN POSITIONS</span>
@@ -87,10 +81,7 @@
                         Find the role where you can make a direct impact on healthcare digital transformation.
                     </p>
 
-                    <!-- Job Cards Grid (Overview for each position) -->
                     <div class="cards-container">
-                        
-                        <!-- 1. Frontend Dev -->
                         <article class="job-card">
                             <div>
                                 <div class="wrap">
@@ -111,7 +102,6 @@
                             </div>
                         </article>
 
-                        <!-- 2. UI/UX Des -->
                         <article class="job-card">
                             <div>
                                 <div class="wrap">
@@ -132,7 +122,6 @@
                             </div>
                         </article>
 
-                        <!-- 3. Backend Dev -->
                         <article class="job-card">
                             <div>
                                 <div class="wrap">
@@ -153,7 +142,6 @@
                             </div>
                         </article>
 
-                        <!-- 4. IT Support Specialist -->
                         <article class="job-card">
                             <div>
                                 <div class="wrap">
@@ -174,7 +162,6 @@
                             </div>
                         </article>
 
-                        <!-- 5. Digital Health Content Specialist -->
                         <article class="job-card">
                             <div>
                                 <div class="wrap">
@@ -195,7 +182,6 @@
                             </div>
                         </article>
 
-                        <!-- 6. QA Tester -->
                         <article class="job-card">
                             <div>
                                 <div class="wrap">
@@ -215,14 +201,12 @@
                                 <a href="#job-QA612" class="primary-button view-detail">View Details &rarr;</a>
                             </div>
                         </article>
-
                     </div>
                 </div>
             </section>
 
             <hr>
 
-            <!-- Detailed Job Descriptions Section with Floated Aside -->
             <section class="jobs-page-section jobs-detail-section">
                 <div class="label-and-description-placed-center">
                     <p class="label">POSITION SPECIFICATIONS</p>
@@ -236,8 +220,6 @@
                     </aside>
 
                     <div class="job-details-container">
-                        
-                        <!-- 1. Frontend Developer Details -->
                         <article id="job-FE102" class="job-card job-detail-card">
                             <h3>Frontend Developer</h3>
                             <p class="job-ref">Ref Number: FE102</p>
@@ -275,7 +257,6 @@
                             </div>
                         </article>
 
-                        <!-- 2. UI/UX Designer Details -->
                         <article id="job-UX204" class="job-card job-detail-card">
                             <h3>UI/UX Designer</h3>
                             <p class="job-ref">Ref Number: UX204</p>
@@ -313,7 +294,6 @@
                             </div>
                         </article>
 
-                        <!-- 3. Backend Developer Details -->
                         <article id="job-BE306" class="job-card job-detail-card">
                             <h3>Backend Developer</h3>
                             <p class="job-ref">Ref Number: BE306</p>
@@ -351,7 +331,6 @@
                             </div>
                         </article>
 
-                        <!-- 4. IT Support Specialist Details -->
                         <article id="job-IT408" class="job-card job-detail-card">
                             <h3>IT Support Specialist</h3>
                             <p class="job-ref">Ref Number: IT408</p>
@@ -389,7 +368,6 @@
                             </div>
                         </article>
 
-                        <!-- 5. Digital Health Content Specialist Details -->
                         <article id="job-HC510" class="job-card job-detail-card">
                             <h3>Digital Health Content Specialist</h3>
                             <p class="job-ref">Ref Number: HC510</p>
@@ -427,7 +405,6 @@
                             </div>
                         </article>
 
-                        <!-- 6. QA Tester Details -->
                         <article id="job-QA612" class="job-card job-detail-card">
                             <h3>QA Tester</h3>
                             <p class="job-ref">Ref Number: QA612</p>
@@ -464,17 +441,15 @@
                                 <a href="apply.html?ref=QA612" class="primary-button">Apply For This Role &rarr;</a>
                             </div>
                         </article>
-
                     </div>
                 </div>
             </section>
         </main>
 
         <footer>
-            <!-- Contact information and required footer  -->
             <div class="footer-container">
                 <div class="footer-about">
-                     <span class="logo">
+                    <span class="logo">
                         <a href="home.html"> 
                             <img src="images/logo.png" alt="company logo">
                         </a>
