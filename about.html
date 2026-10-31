@@ -10,21 +10,10 @@
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
-    <style> /*again you know who fixed this*/
-        @media (max-width: 600px) {
-            .about-page .hero-section {
-                background-image: 
-                linear-gradient(
-                   rgba(21, 88, 147, 0.65),
-                   rgba(18, 48, 74, 0.65)
-            ),
-            url("../images/hero-background.png") !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-position: center !important;
-            }
+    <style> /*Fixed by Tran Truong Hieu, this means that whenever user hover their mouse on any row of the table, the background shift colour to highlight which row you are on*/
+        .fun-facts-table tr:hover td {
+            background-color: #F8FAFC;
         }
-       
     </style>
 
 </head>
@@ -147,11 +136,10 @@
             </div>
 
             <!-- Fun Facts Table Requirement -->
-            <div class="about-content-block" aria-labelledby="fun-facts-heading">
+            <div class="about-content-block">
                 <h2 id="fun-facts-heading">Team Fun Facts</h2>
                 <div class="table-responsive">
                     <table class="fun-facts-table">
-                        <caption>Table 1: Team Member Hometowns, Dream Jobs, and Coding Snacks</caption>
                         <thead>
                             <tr>
                                 <th>Name</th>
