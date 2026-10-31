@@ -20,35 +20,32 @@
 
 <body class="about-page">
     <header>
-        <nav class="nav-bar" aria-label="Main navigation">
+        <nav class="nav-bar">
             <span class="logo">
                 <a href="home.html">
                     <img src="images/logo.png" alt="company logo">
                 </a>
             </span>
 
-            <!-- Mobile hamburger menu toggle -->
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox" class="menu-toggle">☰</label>
 
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="jobs.html">Career</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <!-- Persistent search box -->
-            <form action="" id="search-box" role="search">
+            <form action="" id="search-box">
                 <input
                     type="search"
                     id="search-text"
                     placeholder="Search"
-                    aria-label="Search"
                     required
                 >
-                <button id="search-button" type="submit" aria-label="Search">
-                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <button id="search-button" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
 
@@ -59,9 +56,9 @@
     </header>
 
     <main>
-        <section class="hero-section" aria-labelledby="about-heading">
+        <section class="hero-section">
             <div class="hero-content">
-                <h1 id="about-heading">About Us</h1>
+                <h1>About Us</h1>
                 <p>
                     Transforming healthcare through digital solutions.<br>
                     Connecting people with meaningful career opportunities in health tech.
@@ -69,11 +66,9 @@
             </div>
         </section>
 
-        <!-- Company Background & Core Values -->
-        <section class="about-page-section" aria-label="Company information">
-            
-            <div class="about-content-block" aria-labelledby="group-info-heading">
-                <h2 id="group-info-heading">Project Group Details</h2>
+        <section class="about-page-section">
+            <div class="about-content-block">
+                <h2>Project Group Details</h2>
                 <ul class="nested-info-list">
                     <li>Group Name: G01
                         <ul class="sub-list">
@@ -84,18 +79,16 @@
                 </ul>
             </div>
 
-            <!-- Group Photo (this one is gen AI for obvious reason) -->
-            <div class="about-content-block" aria-labelledby="group-photo-heading">
-                <h2 id="group-photo-heading">Our Team</h2>
+            <div class="about-content-block">
+                <h2>Our Team</h2>
                 <figure class="group-figure">
                     <img src="images/GP.jpg" alt="Chin-su Clinic development team working together" class="group-photo">
                     <figcaption>Chin-su Clinic Project Development Team (G01)</figcaption>
                 </figure>
             </div>
 
-            <!-- Member Quotes (for obvious reason we also use genAI) -->
-            <div class="about-content-block" aria-labelledby="contributions-heading">
-                <h2 id="contributions-heading">Member Contributions &amp; Personal Quotes</h2>
+            <div class="about-content-block">
+                <h2>Member Contributions &amp; Personal Quotes</h2>
                 <dl class="contributions-dl">
                     <dt>Tran Truong Hieu</dt>
                     <dd>
@@ -135,11 +128,11 @@
                 </dl>
             </div>
 
-            <!-- Fun Facts Table Requirement -->
             <div class="about-content-block">
-                <h2 id="fun-facts-heading">Team Fun Facts</h2>
+                <h2>Team Fun Facts</h2>
                 <div class="table-responsive">
                     <table class="fun-facts-table">
+                        <caption>Table 1: Team Member Hometowns, Dream Jobs, and Coding Snacks</caption>
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -178,9 +171,8 @@
                 </div>
             </div>
 
-            <!-- Company Background Section -->
-            <div class="about-content-block" aria-labelledby="company-background-heading">
-                <h2 id="company-background-heading">Company Background</h2>
+            <div class="about-content-block">
+                <h2>Company Background</h2>
                 <div class="about-copy">
                     <p>
                         Our company is dedicated to connecting people with
@@ -195,9 +187,8 @@
                 </div>
             </div>
 
-            <!-- Core Values Section -->
-            <div class="about-content-block" aria-labelledby="core-values-heading">
-                <h2 id="core-values-heading">Our Core Values</h2>
+            <div class="about-content-block">
+                <h2>Our Core Values</h2>
                 <ol class="about-values">
                     <li>
                         <h3>Integrity</h3>
@@ -221,14 +212,13 @@
                     </li>
                 </ol>
             </div>
-
         </section>
     </main>
 
     <footer id="contact">
         <div class="footer-container">
             <div class="footer-about">
-                 <span class="logo">
+                <span class="logo">
                     <a href="home.html"> 
                         <img src="images/logo.png" alt="company logo">
                     </a>
