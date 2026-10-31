@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="style/apply.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
-    <!-- Fixes made by Tran Truong Hieu -->
-    <style>
+    <style> /*fixed by Tran Truong Hieu, this make sure that the radio buttons don't turn American*/
         .form-field input[type="radio"] {
             display: inline-block;
             width: 18px;
@@ -23,12 +22,11 @@
             vertical-align: middle;
         }
     </style>
-
 </head>
 
 <body class="apply-page">
     <header>
-        <nav class="nav-bar" aria-label="Main navigation">
+        <nav class="nav-bar">
             <span class="logo">
                 <a href="home.html">
                     <img src="images/logo.png" alt="Healthcare Technology home">
@@ -45,27 +43,26 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <form action="" id="search-box" role="search">
+            <form action="" id="search-box">
                 <input
                     type="search"
                     id="search-text"
                     placeholder="Search"
-                    aria-label="Search"
                     required
                 >
-                <button id="search-button" type="submit" aria-label="Search">
-                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <button id="search-button" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
 
             <button class="apply-button">   
-                <a href="apply.html" aria-current="page">Apply now</a>
+                <a href="apply.html">Apply now</a>
             </button> 
         </nav>
     </header>
 
     <main>
-        <section class="hero-section apply-hero" aria-labelledby="apply-heading">
+        <section class="hero-section apply-hero">
             <div class="hero-content">
                 <p class="apply-eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
                 <h1 id="apply-heading">Apply to Join<br>Our Team</h1>
@@ -76,20 +73,17 @@
             </div>
         </section>
 
-        <section class="apply-section" aria-labelledby="form-title">
+        <section class="apply-section">
             <div class="apply-intro">
                 <p class="label">JOB APPLICATION</p>
                 <h2 id="form-title">Application Form</h2>
                 <p class="apply-description">
                     Complete the required fields below.
-                    Fields marked with <span aria-hidden="true">*</span> are mandatory.
+                    Fields marked with <span>*</span> are mandatory.
                 </p>
             </div>
 
-            <!-- Form configured with POST (added by Tran Truong Hieu)  -->
             <form class="application-form" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
-
-                <!-- Job Reference Number -->
                 <fieldset class="form-group">
                     <legend>
                         <span class="step-number">01</span>
@@ -98,7 +92,7 @@
 
                     <div class="form-grid">
                         <div class="form-field form-field-full">
-                            <label for="reference">Job reference number <span aria-hidden="true">*</span></label>
+                            <label for="reference">Job reference number <span>*</span></label>
                             <input
                                 type="text"
                                 id="reference"
@@ -106,16 +100,14 @@
                                 pattern="[A-Za-z0-9]{5}"
                                 maxlength="5"
                                 placeholder="Exactly 5 alphanumeric characters (e.g. FE102)"
-                                aria-describedby="reference-help"
                                 required>
-                            <small id="reference-help">
+                            <small>
                                 Must be exactly 5 alphanumeric characters.
                             </small>
                         </div>
                     </div>
                 </fieldset>
 
-                <!-- Personal Information -->
                 <fieldset class="form-group">
                     <legend>
                         <span class="step-number">02</span>
@@ -124,7 +116,7 @@
 
                     <div class="form-grid">
                         <div class="form-field">
-                            <label for="first-name">First name <span aria-hidden="true">*</span></label>
+                            <label for="first-name">First name <span>*</span></label>
                             <input
                                 type="text"
                                 id="first-name"
@@ -137,7 +129,7 @@
                         </div>
 
                         <div class="form-field">
-                            <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+                            <label for="last-name">Last name <span>*</span></label>
                             <input
                                 type="text"
                                 id="last-name"
@@ -150,22 +142,21 @@
                         </div>
 
                         <div class="form-field">
-                            <label for="dob">Date of birth <span aria-hidden="true">*</span></label>
+                            <label for="dob">Date of birth <span>*</span></label>
                             <input
                                 type="text"
                                 id="dob"
                                 name="date_of_birth"
                                 placeholder="dd/mm/yyyy"
                                 pattern="\d{2}/\d{2}/\d{4}"
-                                aria-describedby="dob-help"
                                 required>
-                            <small id="dob-help">Format: dd/mm/yyyy</small>
+                            <small>Format: dd/mm/yyyy</small>
                         </div>
 
                         <div class="form-field">
                             <fieldset class="gender-fieldset" style="border:none; padding:0; margin:0;">
                                 <legend style="font-size: 15px; font-weight: 600; color: #EAF4F8; margin-bottom: 9px; padding:0;">
-                                    Gender <span aria-hidden="true">*</span>
+                                    Gender <span>*</span>
                                 </legend>
                                 <div style="display: flex; gap: 20px; align-items: center; min-height: 48px;">
                                     <label class="choice-label"><input type="radio" name="gender" value="male" required> Male</label>
@@ -177,7 +168,6 @@
                     </div>
                 </fieldset>
 
-                <!-- Address Information -->
                 <fieldset class="form-group">
                     <legend>
                         <span class="step-number">03</span>
@@ -186,7 +176,7 @@
 
                     <div class="form-grid">
                         <div class="form-field form-field-full">
-                            <label for="street-address">Street Address <span aria-hidden="true">*</span></label>
+                            <label for="street-address">Street Address <span>*</span></label>
                             <input
                                 type="text"
                                 id="street-address"
@@ -197,7 +187,7 @@
                         </div>
 
                         <div class="form-field">
-                            <label for="suburb">Suburb/Town <span aria-hidden="true">*</span></label>
+                            <label for="suburb">Suburb/Town <span>*</span></label>
                             <input
                                 type="text"
                                 id="suburb"
@@ -208,7 +198,7 @@
                         </div>
 
                         <div class="form-field">
-                            <label for="state">State <span aria-hidden="true">*</span></label>
+                            <label for="state">State <span>*</span></label>
                             <select id="state" name="state" required>
                                 <option value="" selected disabled>Please select state</option>
                                 <option value="VIC">VIC</option>
@@ -223,7 +213,7 @@
                         </div>
 
                         <div class="form-field">
-                            <label for="postcode">Postcode <span aria-hidden="true">*</span></label>
+                            <label for="postcode">Postcode <span>*</span></label>
                             <input
                                 type="text"
                                 id="postcode"
@@ -235,7 +225,7 @@
                         </div>
 
                         <div class="form-field">
-                            <label for="email">Email address <span aria-hidden="true">*</span></label>
+                            <label for="email">Email address <span>*</span></label>
                             <input
                                 type="email"
                                 id="email"
@@ -246,7 +236,7 @@
                         </div>
 
                         <div class="form-field form-field-full">
-                            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+                            <label for="phone">Phone number <span>*</span></label>
                             <input
                                 type="tel"
                                 id="phone"
@@ -255,14 +245,12 @@
                                 minlength="8"
                                 maxlength="12"
                                 placeholder="8–12 digits"
-                                aria-describedby="phone-help"
                                 required>
-                            <small id="phone-help">Must be between 8 and 12 digits.</small>
+                            <small>Must be between 8 and 12 digits.</small>
                         </div>
                     </div>
                 </fieldset>
 
-                <!-- Skills & Qualifications -->
                 <fieldset class="form-group">
                     <legend>
                         <span class="step-number">04</span>
@@ -275,7 +263,7 @@
                                 Skill list (select all that apply)
                             </p>
 
-                            <div class="checkbox-grid" role="group" aria-labelledby="skills-label">
+                            <div class="checkbox-grid">
                                 <label class="choice-label">
                                     <input type="checkbox" name="skills[]" value="html-css">
                                     HTML / CSS
@@ -308,7 +296,6 @@
                             </div>
                         </div>
 
-                        <!-- Textarea for Other skills (Not required as per requirements) -->
                         <div class="form-field form-field-full">
                             <label for="other-skills">
                                 Other skills
@@ -325,12 +312,12 @@
 
                 <div class="form-actions">
                     <button type="reset" class="reset-button">
-                        <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                        <i class="fa-solid fa-rotate-left"></i>
                         Reset Form
                     </button>
 
                     <button type="submit" class="submit-button">
-                        Submit Application <span aria-hidden="true">&rarr;</span>
+                        Submit Application <span>&rarr;</span>
                     </button>
                 </div>
             </form>
@@ -340,7 +327,7 @@
     <footer id="contact">
         <div class="footer-container">
             <div class="footer-about">
-                 <span class="logo">
+                <span class="logo">
                     <a href="home.html"> 
                         <img src="images/logo.png" alt="company logo">
                     </a>
