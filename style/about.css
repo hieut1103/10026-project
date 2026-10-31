@@ -1,0 +1,196 @@
+/* ========================================
+   ABOUT PAGE SPECIFIC STYLES
+   ======================================== */
+
+.about-page-section {
+    padding: 80px 8%;
+    background-color: #F1F7FB;
+    color: #12304A;
+}
+
+.about-content-block {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+}
+
+.about-content-block h2 {
+    font-size: clamp(30px, 4vw, 40px);
+    margin-bottom: 20px;
+    color: #12304A;
+}
+
+.about-copy p,
+.about-values li p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #456174;
+}
+
+.company-highlight {
+    color: #0F9488;
+    font-weight: 600;
+}
+
+.about-values {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+.about-values li {
+    margin-bottom: 20px;
+}
+
+.about-values h3 {
+    font-size: 20px;
+    color: #12304A;
+    margin-bottom: 5px;
+}
+
+/* --- Nested List Styling (Group Details) --- */
+.nested-info-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.nested-info-list > li {
+    font-weight: 600;
+    color: #12304A;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.sub-list {
+    list-style-type: circle;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-weight: normal;
+    color: #456174;
+    font-size: 16px;
+}
+
+.sub-list li {
+    margin-bottom: 6px;
+}
+
+/* --- Definition List Styling (Contributions & Quotes) --- */
+.contributions-dl {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contributions-dl dt {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0F9488;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.contributions-dl dt:first-child {
+    margin-top: 0;
+}
+
+.contributions-dl dd {
+    margin-left: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #456174;
+}
+
+.quote-box {
+    background: #F8FAFC;
+    border-left: 4px solid #14B8A6;
+    padding: 12px 18px;
+    margin-top: 10px;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #1E293B;
+}
+
+.quote-translation {
+    display: block;
+    font-size: 14px;
+    color: #64748B;
+    margin-top: 4px;
+    font-style: normal;
+}
+
+/* --- Group Photo --- */
+.group-figure {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin: 0;
+}
+
+.group-photo {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #14B8A6;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.group-figure figcaption {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #12304A;
+}
+
+/* --- Fun Facts Table --- */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.fun-facts-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.fun-facts-table caption {
+    font-size: 18px;
+    font-weight: 700;
+    color: #12304A;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.fun-facts-table th,
+.fun-facts-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+    font-size: 15px;
+    color: #456174;
+}
+
+.fun-facts-table th {
+    background-color: #12304A;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.fun-facts-table tr:last-child td {
+    border-bottom: none;
+}
+
+.fun-facts-table tr:hover td {
+    background-color: #F8FAFC;
+}
+
